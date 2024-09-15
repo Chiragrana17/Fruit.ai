@@ -12,10 +12,9 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect("mongodb://localhost:27017/faqdb", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});
+mongoose.connect(
+    "mongodb+srv://chirag:Chirag%40123@cluster0.ejue6.mongodb.net/", {}
+);
 
 const faqSchema = new mongoose.Schema({
     question: String,
