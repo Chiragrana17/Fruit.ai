@@ -10,7 +10,7 @@ const FaqSection = () => {
 <<<<<<< HEAD
     useEffect(() => {
         axios
-            .get("hhttps://appreciate-1.onrender.com/faqs")
+            .get("https://localhost:5000/faqs")
             .then((response) => setFaqItems(response.data))
             .catch((error) => console.error("Error fetching FAQs:", error));
     }, []);
@@ -34,7 +34,7 @@ const FaqSection = () => {
         const updatedAnswer = prompt("Enter the new answer:", "");
         if (updatedQuestion && updatedAnswer) {
             axios
-                .put(`https://appreciate-1.onrender.com/faqs/${id}`, {
+                .put(`https://localhost:5000/faqs/${id}`, {
                     question: updatedQuestion,
                     answer: updatedAnswer,
                 })
@@ -49,7 +49,7 @@ const FaqSection = () => {
 
     const handleDeleteFaq = (id) => {
         axios
-            .delete(`https://appreciate-1.onrender.com/faqs/${id}`)
+            .delete(`https://localhost:5000/faqs/${id}`)
             .then(() => {
                 setFaqItems(faqItems.filter((faq) => faq._id !== id));
             })
