@@ -1,0 +1,100 @@
+.add-faq {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center-align the form */
+}
+
+.add-faq input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0px;
+    /* Full width to fit container */
+    max-width: 400px;
+    /* Optional: Set a max width for larger screens */
+}
+
+.add-faq button {
+    padding: 8px 16px;
+    /* Adjust padding for a small rectangle */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+    /* Slightly smaller font size */
+}
+
+.add-faq button:hover {
+    background-color: #218838;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center-align the FAQ items */
+    width: 100%;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Optional: Set a max width for larger screens */
+}
+
+.faq-item button {
+    padding: 4px 8px;
+    /* Smaller padding for a smaller button */
+    border: none;
+    border-radius: 3px;
+    /* Slightly smaller border-radius for a rectangular look */
+    cursor: pointer;
+    font-size: 12px;
+    /* Smaller font size */
+    background-color: #007bff;
+    /* Example background color */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center text within the button */
+    display: inline-flex;
+    /* Use inline-flex to center text properly */
+    align-items: center;
+    /* Center text vertically */
+    justify-content: center;
+    /* Center text horizontally */
+}
+
+.faq-item button:hover {
+    background-color: #0056b3;
+    /* Darker shade for hover effect */
+}
+
+.faq-item button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.faq-item button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.faq-question {
+    margin-top: 5px;
+}
+
+.faq-answer {
+    margin-top: 0px;
+}

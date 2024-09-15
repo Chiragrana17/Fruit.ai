@@ -1,0 +1,104 @@
+/* src/components/Translate.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0ffff;
+    /* Light blue background */
+}
+
+.translate-container {
+    max-width: 1000px;
+    /* Further increased width */
+    width: 95%;
+    /* Ensure it adjusts to different screen sizes */
+    margin: 0 auto;
+    padding: 40px;
+    /* Increased padding */
+    background: linear-gradient(to bottom, #fffaff, #e0ffff);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow */
+}
+
+h1 {
+    font-size: 32px;
+    /* Increased font size */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    /* Increased margin */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    /* Increased margin */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    /* Increased margin */
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    /* Increased padding */
+    font-size: 18px;
+    /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    /* Slightly larger border radius */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    /* Increased padding */
+    font-size: 18px;
+    /* Increased font size */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    /* Slightly larger border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #6c757d;
+}
+
+.result {
+    margin-top: 30px;
+    /* Increased margin */
+    font-size: 20px;
+    /* Increased font size */
+    word-wrap: break-word;
+}
+
+.error {
+    color: red;
+}
+
+p {
+    font-size: 20px;
+    /* Increased font size */
+    word-wrap: break-word;
+}

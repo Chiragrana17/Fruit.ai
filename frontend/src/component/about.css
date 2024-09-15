@@ -1,0 +1,75 @@
+/* About.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0ffff;
+    /* Light blue background similar to Home */
+}
+
+.abouts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 90vh;
+}
+
+.containerss {
+    width: 300px;
+    background: linear-gradient(to bottom, #efbfef, #a6f0f0);
+    /* Gradient background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    /* Add space below paragraph */
+}
+
+.abouts-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.abouts-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive design */
+
+@media screen and (max-width: 400px) {
+    .containerss {
+        width: 90%;
+        height: auto;
+        /* Adjust height to fit content */
+    }
+}
