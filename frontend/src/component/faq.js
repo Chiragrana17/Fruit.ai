@@ -58,14 +58,14 @@ const FaqSection = () => {
 =======
   useEffect(() => {
     axios
-      .get("https://appreciate-1.onrender.com/faqs")
+      .get("http://localhost:5000/faqs")
       .then((response) => setFaqItems(response.data))
       .catch((error) => console.error("Error fetching FAQs:", error));
   }, []);
 
   const handleAddFaq = () => {
     axios
-      .post("https://appreciate-1.onrender.com/faqs", {
+      .post("http://localhost:5000/faqs", {
         question: newQuestion,
         answer: newAnswer,
       })
@@ -82,7 +82,7 @@ const FaqSection = () => {
     const updatedAnswer = prompt("Enter the new answer:", "");
     if (updatedQuestion && updatedAnswer) {
       axios
-        .put(`https://appreciate-1.onrender.com/faqs/${id}`, {
+        .put(`http://localhost:5000/faqs/${id}`, {
           question: updatedQuestion,
           answer: updatedAnswer,
         })
@@ -97,7 +97,7 @@ const FaqSection = () => {
 
   const handleDeleteFaq = (id) => {
     axios
-      .delete(`https://appreciate-1.onrender.com/faqs/${id}`)
+      .delete(`http://localhost:5000/faqs/${id}`)
       .then(() => {
         setFaqItems(faqItems.filter((faq) => faq._id !== id));
       })
