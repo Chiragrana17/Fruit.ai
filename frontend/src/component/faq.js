@@ -9,14 +9,14 @@ const FaqSection = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/faqs")
+            .get("https://fruit-ai-7.onrender.com/faqs")
             .then((response) => setFaqItems(response.data))
             .catch((error) => console.error("Error fetching FAQs:", error));
     }, []);
 
     const handleAddFaq = () => {
         axios
-            .post("http://localhost:5000/faqs", {
+            .post("https://fruit-ai-7.onrender.com/faqs", {
                 question: newQuestion,
                 answer: newAnswer,
             })
@@ -33,7 +33,7 @@ const FaqSection = () => {
         const updatedAnswer = prompt("Enter the new answer:", "");
         if (updatedQuestion && updatedAnswer) {
             axios
-                .put(`http://localhost:5000/faqs/${id}`, {
+                .put(`https://fruit-ai-7.onrender.com/faqs/${id}`, {
                     question: updatedQuestion,
                     answer: updatedAnswer,
                 })
@@ -48,7 +48,7 @@ const FaqSection = () => {
 
     const handleDeleteFaq = (id) => {
         axios
-            .delete(`http://localhost:5000/faqs/${id}`)
+            .delete(`https://fruit-ai-7.onrender.com/faqs/${id}`)
             .then(() => {
                 setFaqItems(faqItems.filter((faq) => faq._id !== id));
             })
