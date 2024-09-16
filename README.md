@@ -4,6 +4,8 @@
 
 This project is a Full Stack web application. The application includes various pages and functionalities, such as a login page, homepage, chatbot page, translator page, FAQ page, and an about page. The design is mobile-friendly and includes CRUD functionality for the FAQs page.
 
+## Deployed Link - https://fruit-ai-flax.vercel.app/
+
 ## Features
 
 - **Login Page**: Secure login for users.
