@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // Connect to MongoDB
 mongoose.connect(
-    "mongodb+srv://chirag:Chirag%40123@cluster0.ejue6.mongodb.net/", {}
+    "mongodb+srv://chirag:Chirag%40123@cluster0.ejue6.mongodb.net/fruitai", {}
 );
 
 const faqSchema = new mongoose.Schema({
